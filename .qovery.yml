@@ -3,6 +3,8 @@ application:
   name: "resto-beep"
   project: "resto-beep"
   organization: "QoveryCommunity"
+  publicly_accessible: true
+  port: 8080
 routers:
 - name: "main-resto-beep"
   routes:
