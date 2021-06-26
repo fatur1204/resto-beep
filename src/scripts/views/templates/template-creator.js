@@ -27,12 +27,13 @@ const createRestoDetailTemplate = (resto) => `
         <p id="categori-data" class="categori"></p>
         <h4>Food Menu</h4>
         <p id="food-menu" class="categori"></p>
-        <h4>Drink Menu</h4> 
-        <p id="drink-menu" class="categori"></p>
-        <h4>Rating ★</h4>
-        <p>${resto.rating}</p>
+
   </div>
   <div class="detail__overview">
+    <h4>Drink Menu</h4> 
+    <p id="drink-menu" class="categori review review-border-menu"></p>
+    <h4>Rating ★</h4>
+    <p>${resto.rating}</p>
     <h3 class="review">Overview</h3>
     <p>${resto.description}</p>
     <h3 class="review">Customer Review</h3>

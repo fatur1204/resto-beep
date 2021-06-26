@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {        
+  "scripts": {
     "start-dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.common.js",
+    "start": "node server.js",
     "build-image": "node sharp.js",
     "lint": "eslint ./src",
     "test": "karma start",
-    "e2e": "codeceptjs run --steps"    
+    "e2e": "codeceptjs run --steps",
+    "heroku-postbuild": "webpack -p --config ./webpack.prod.js --progress"
   },
   "keywords": [],
   "author": "your_name <your.email@domain.com>",
@@ -53,6 +55,7 @@
     "lazysizes": "^5.3.2",
     "lodash.filter": "^4.6.0",
     "regenerator-runtime": "^0.13.5",
-    "serviceworker-webpack-plugin": "^1.0.1"
+    "serviceworker-webpack-plugin": "^1.0.1",
+    "express": "^4.14.0"
   }
 }

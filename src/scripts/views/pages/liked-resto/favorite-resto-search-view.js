@@ -5,7 +5,7 @@ class FavoriteRestoSearchView {
   getTemplate() {
     return `
         <section class="content">          
-        <input id="query" type="text">
+        <input id="query" type="text" Placeholder="Search Resto">
           <div class="latest">
             <h1 class="latest__label" tabindex="0">Favorite Restaurant</h1>
             <div class="lds-ring"><div></div><div></div><div></div><div></div></div>                      
@@ -40,7 +40,7 @@ class FavoriteRestoSearchView {
   }
 
   _getEmptyRestoTemplate() {
-    return '<div class="resto-item__not__found">Tidak ada resto untuk ditampilkan</div>';
+    return '<div class="resto-item__not__found">Tidak ada resto untuk ditampilkan!</div>';
   }
 }
 
